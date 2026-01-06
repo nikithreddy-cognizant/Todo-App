@@ -1,0 +1,76 @@
+{
+  "users": [
+    {
+      "id": "2b6b",
+      "name": "Nikith Reddy",
+      "password": "nikith",
+      "email": "nikith@gmail.com",
+      "gender": "male"
+    },
+    {
+      "id": "ff4e",
+      "name": "Pruthvi Nikhil",
+      "password": "pruthvi",
+      "email": "pruthvi@gmail.com",
+      "gender": "male"
+    },
+    {
+      "id": "f15c",
+      "name": "Karthik",
+      "password": "karthik",
+      "email": "karthik@gmail.com",
+      "gender": "male"
+    },
+    {
+      "id": "2cd3",
+      "name": "ni",
+      "password": "",
+      "email": "nikit@gmail.com",
+      "gender": ""
+    }
+  ],
+  "tasks": [
+    {
+      "id": "473c",
+      "userId": "2b6b",
+      "task": "complete assignment",
+      "status": "completed"
+    },
+    {
+      "id": "eeac",
+      "userId": "2b6b",
+      "task": "Drink 2 litres of water",
+      "status": "completed"
+    },
+    {
+      "id": "37b2",
+      "userId": "2b6b",
+      "task": "Read a book for 30 mins",
+      "status": "pending"
+    },
+    {
+      "id": "8d07",
+      "userId": "ff4e",
+      "task": "Complete The Assignment before 4 pm today",
+      "status": "pending"
+    },
+    {
+      "id": "4ad7",
+      "userId": "f15c",
+      "task": "Play for 1 hours",
+      "status": "pending"
+    },
+    {
+      "id": "ba0b",
+      "userId": "2b6b",
+      "task": "Complete The Assignment before 4 pm today",
+      "status": "completed"
+    },
+    {
+      "id": "4cf7",
+      "userId": "2b6b",
+      "task": "Complete The Assignment before 4 pm today",
+      "status": "pending"
+    }
+  ]
+}

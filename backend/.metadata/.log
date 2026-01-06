@@ -1,0 +1,108 @@
+!SESSION 2026-01-06 17:14:44.162 -----------------------------------------------
+eclipse.buildId=4.36.0.20250605-1300
+java.version=21.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2026-01-06 17:16:21.001
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-01-06 17:17:14.818
+!MESSAGE Logback config file: C:\Users\2438824\Downloads\Todo-App\backend\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.osgi 4 0 2026-01-06 17:17:19.083
+!MESSAGE Application error
+!STACK 1
+org.eclipse.swt.SWTError: No more handles
+	at org.eclipse.swt.SWT.error(SWT.java:4975)
+	at org.eclipse.swt.SWT.error(SWT.java:4860)
+	at org.eclipse.swt.SWT.error(SWT.java:4831)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:507)
+	at org.eclipse.swt.widgets.Control.createHandle(Control.java:678)
+	at org.eclipse.swt.widgets.Scrollable.createHandle(Scrollable.java:143)
+	at org.eclipse.swt.widgets.Composite.createHandle(Composite.java:300)
+	at org.eclipse.swt.widgets.Control.createWidget(Control.java:704)
+	at org.eclipse.swt.widgets.Scrollable.createWidget(Scrollable.java:158)
+	at org.eclipse.swt.widgets.Control.<init>(Control.java:124)
+	at org.eclipse.swt.widgets.Scrollable.<init>(Scrollable.java:85)
+	at org.eclipse.swt.widgets.Composite.<init>(Composite.java:103)
+	at org.eclipse.ui.splash.BasicSplashHandler.getBundleProgressMonitor(BasicSplashHandler.java:136)
+	at org.eclipse.ui.splash.BasicSplashHandler.getContent(BasicSplashHandler.java:222)
+	at org.eclipse.ui.internal.splash.EclipseSplashHandler.init(EclipseSplashHandler.java:99)
+	at org.eclipse.ui.internal.Workbench$3.run(Workbench.java:861)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.ui.internal.Workbench.createSplashWrapper(Workbench.java:875)
+	at org.eclipse.ui.internal.Workbench.lambda$4(Workbench.java:643)
+	at org.eclipse.swt.internal.DPIUtil.runWithAutoScaleValue(DPIUtil.java:680)
+	at org.eclipse.ui.internal.Workbench$AutoscaleAdaptation.runWithInitialAutoScaleValue(Workbench.java:3674)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:666)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:185)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+!SESSION 2026-01-06 17:14:44.225 -----------------------------------------------
+eclipse.buildId=4.36.0.20250605-1300
+java.version=21.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2026-01-06 17:16:20.613
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-01-06 17:24:20.191
+!MESSAGE Logback config file: C:\Users\2438824\Downloads\Todo-App\backend\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.osgi 4 0 2026-01-06 17:24:23.053
+!MESSAGE Application error
+!STACK 1
+org.eclipse.swt.SWTError: No more handles
+	at org.eclipse.swt.SWT.error(SWT.java:4975)
+	at org.eclipse.swt.SWT.error(SWT.java:4860)
+	at org.eclipse.swt.SWT.error(SWT.java:4831)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:507)
+	at org.eclipse.swt.widgets.Control.createHandle(Control.java:678)
+	at org.eclipse.swt.widgets.Scrollable.createHandle(Scrollable.java:143)
+	at org.eclipse.swt.widgets.Composite.createHandle(Composite.java:300)
+	at org.eclipse.swt.widgets.Control.createWidget(Control.java:704)
+	at org.eclipse.swt.widgets.Scrollable.createWidget(Scrollable.java:158)
+	at org.eclipse.swt.widgets.Control.<init>(Control.java:124)
+	at org.eclipse.swt.widgets.Scrollable.<init>(Scrollable.java:85)
+	at org.eclipse.swt.widgets.Composite.<init>(Composite.java:103)
+	at org.eclipse.ui.splash.BasicSplashHandler.getBundleProgressMonitor(BasicSplashHandler.java:136)
+	at org.eclipse.ui.splash.BasicSplashHandler.getContent(BasicSplashHandler.java:222)
+	at org.eclipse.ui.internal.splash.EclipseSplashHandler.init(EclipseSplashHandler.java:99)
+	at org.eclipse.ui.internal.Workbench$3.run(Workbench.java:861)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.ui.internal.Workbench.createSplashWrapper(Workbench.java:875)
+	at org.eclipse.ui.internal.Workbench.lambda$4(Workbench.java:643)
+	at org.eclipse.swt.internal.DPIUtil.runWithAutoScaleValue(DPIUtil.java:680)
+	at org.eclipse.ui.internal.Workbench$AutoscaleAdaptation.runWithInitialAutoScaleValue(Workbench.java:3674)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:666)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:185)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)

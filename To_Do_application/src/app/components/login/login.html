@@ -1,0 +1,68 @@
+<div class="d-flex justify-content-center align-items-center" style="width: 100vw; height: 92vh">
+  <div
+    class=" d-flex flex-column justify-content-center align-items-center shadow p-4 rounded bg-white border-sky-blue"
+    style="height: 400px; width: 45vw"
+  >
+    <h2 class="fw-bold mb-4">Login</h2>
+
+  
+<p *ngIf="message?.success" class="text-success">{{ message?.title }}</p>
+<p *ngIf="message && !message.success" class="text-danger">{{ message.title }}</p>
+
+
+    <form class="w-75" [formGroup]="LoginForm" (ngSubmit)="submitHandler()">
+      <!-- Email -->
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter Your Email"
+          class="form-control"
+          formControlName="email"
+        />
+        <div
+          *ngIf="LoginForm.get('email')?.touched && LoginForm.get('email')?.invalid"
+          class="text-danger mt-1"
+        >
+          <small *ngIf="LoginForm.get('email')?.errors?.['required']">Email is required. </small>
+          <small *ngIf="LoginForm.get('email')?.errors?.['email']"
+            >Enter a valid email address.</small
+          >
+        </div>
+      </div>
+
+      <!-- Password -->
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter Your Password"
+          class="form-control"
+          formControlName="password"
+        />
+        <div
+          *ngIf="LoginForm.get('password')?.touched && LoginForm.get('password')?.invalid"
+          class="text-danger mt-1"
+        >
+          <small *ngIf="LoginForm.get('password')?.errors?.['required']"
+            >Password is required.</small
+          >
+          <small *ngIf="LoginForm.get('password')?.errors?.['minlength']"
+            >Password must be at least 6 characters.</small
+          >
+        </div>
+      </div>
+
+      <div class="d-flex align-items-center justify-content-between gap-2 w-100 mt-3">
+        <button type="submit" class="btn btn-sky-blue px-3"><i class="bi bi-arrow-right"></i> Login</button>
+        <a class="btn btn-link text-sky-blue text-decoration-none" routerLink="/register">
+          I don’t have an account
+        </a>
+      </div>
+    </form>
+  </div>
+</div>

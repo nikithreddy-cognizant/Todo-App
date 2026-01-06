@@ -1,0 +1,52 @@
+:root {
+  --blue: #000048;
+  --orange-hover: #020258;
+  --sky-blue:#2F78C4;
+  --sky-blue-hover:#1171d7;
+  --white: #ffffff;
+  --black: #000000;
+  --text-muted-dark: #787979;
+  --text-muted: #dde0e0;
+  --app-bg:#edf6f8;
+
+}
+
+
+.blue{
+  background-color: var(--blue) !important;
+  color: var(--white) !important;
+}
+
+.bg-blue{
+  background-color: var(--blue) !important;
+}
+
+.text-blue{
+  color: var(--blue) !important;
+}
+
+.bg-sky-blue{
+  background-color: var(--sky-blue) !important;
+}
+
+.text-sky-blue{
+  color: var(--sky-blue) !important;
+}
+
+.app-bg{
+  background-color: var(--app-bg) !important;
+}
+
+.btn-sky-blue{
+background-color: var(--sky-blue) !important;
+color: var(--white) !important;
+}
+
+.btn-sky-blue:hover{
+background-color: var(--sky-blue-hover) !important;
+color: var(--white) !important;
+}
+
+.border-sky-blue{
+    border: 1px solid #2F78C4;
+}

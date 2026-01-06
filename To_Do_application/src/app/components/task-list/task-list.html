@@ -1,0 +1,84 @@
+<div class="d-flex justify-content-center align-items-center" style="width: 100vw; height: 92vh">
+  <div class="w-75 h-7 d-flex flex-column justify-content-center align-items-center">
+    <h3 class="align-self-start text-blue h-25">Tasks List</h3>
+
+    <div class="table-scroll-viewport w-100">
+      <table
+        class="table table-striped table-hover w-100 shadow p-4 table-bordered bg-white"
+        *ngIf="tasks.length > 0; else notasks"
+      >
+        <thead>
+          <tr>
+            <th class="w-25 text-center">Status</th>
+            <th class="w-50 text-center">Task</th>
+            <th class="w-25 text-center">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let task of tasks">
+            <!-- Checkbox Column -->
+            <td class="w-25 text-center">
+              <input
+                type="checkbox"
+                class="form-check-input me-2"
+                [checked]="task.status === 'completed'"
+                (change)="toggleStatus(task)"
+              />
+            </td>
+
+            <!-- Task Column -->
+            <td class="w-50 text-center">
+              <ng-container *ngIf="task.taskId === updateId; else viewMode">
+                <input type="text" class="form-control" [formControl]="taskUpdatedValue" />
+              </ng-container>
+              <ng-template #viewMode>
+                <span [ngClass]="{ 'completed-task': task.status === 'completed' }" class="ms-2">
+                  {{ task.task }}
+                </span>
+              </ng-template>
+            </td>
+
+            <!-- Actions Column -->
+            <td class="w-25 text-center">
+              <ng-container *ngIf="task.taskId === updateId; else actionButtons">
+                <button type="button" class="btn btn-sm btn-danger me-2" (click)="cancelHandler()">
+                  Cancel
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-sm btn-success ms-2"
+                  (click)="submitHandler(task)"
+                >
+                  Save
+                </button>
+              </ng-container>
+              <ng-template #actionButtons>
+                <button
+                  type="button"
+                  class="btn btn-sm btn-danger me-2"
+                  (click)="deleteHandler(task.taskId!)"
+                >
+                  <i class="bi bi-trash"></i> Delete
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-sm btn-sky-blue ms-2"
+                  (click)="updateHandler(task)"
+                >
+                  <i class="bi bi-pencil-square"></i> Edit
+                </button>
+              </ng-template>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <ng-template #notasks>
+      <h2 class="text-muted">No tasks available. Please add a new task.</h2>
+      <a class="btn btn-link text-sky-blue text-decoration-none" routerLink="/addTask">
+        Add Task
+      </a>
+    </ng-template>
+  </div>
+</div>

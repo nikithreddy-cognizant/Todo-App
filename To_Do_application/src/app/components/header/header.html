@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-lg shadow-sm" style="width: 100vw">
+  <div class="container-fluid">
+
+    <a class="navbar-brand fw-bolder text-white ms-5 ps-5" routerLink="/">Task-M</a>
+
+    
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse me-5 pe-5" id="navbarNav">
+      <ul class="navbar-nav ms-auto d-flex align-items-center gap-5 fw-bold">
+        @let user = (user$ | async);
+        @if (user) {
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/addTask">Add Task</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/taskList">Task List</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="logoutHandler()">Logout</a>
+        </li>
+
+        } @else {
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/login">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/register">Register</a>
+        </li>
+        }
+      </ul>
+
+      @if (user) {
+      <div class="fw-bold d-none d-lg-flex align-items-center ms-5">
+        <i class="bi bi-person-circle text-white fs-4 me-2"></i>
+        <span class="text-white">{{ user.userName }}</span>
+      </div>
+      }
+    </div>
+  </div>
+</nav>

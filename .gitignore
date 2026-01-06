@@ -1,0 +1,16 @@
+
+# Angular
+To_Do_application/node_modules/
+To_Do_application/dist/
+
+# Java / Spring Boot
+backend/**/target/
+backend/**/.classpath
+backend/**/.project
+backend/**/.settings/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

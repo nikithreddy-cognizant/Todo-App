@@ -1,0 +1,56 @@
+<div
+  class="d-flex flex-column justify-content-center align-items-center"
+  style="width: 100vw; height: 92vh"
+>
+  <div class="w-50 h-75 d-flex flex-column justify-content-center align-items-center gap-3">
+    <h3 class="align-self-start text-blue">Welcome {{ userData?.userName }}!</h3>
+
+    <div
+      class="w-100 h-50 d-flex flex-column bg-white justify-content-center align-items-center shadow p-4 border-sky-blue rounded-4"
+    >
+
+    
+      <form
+        class="w-75 d-flex flex-column gap-3"
+        [formGroup]="TaskForm"
+        (ngSubmit)="submitHandler()"
+      >
+        <h4 class="m-0 p-0 text-blue">Add Your Task Here</h4>
+        <input
+          type="text"
+          name="task"
+          id="task"
+          placeholder="Enter Your Task"
+          class="form-control"
+          formControlName="task"
+          (focus)="clearMessage()" 
+        />
+        <button type="submit" class="btn btn-sky-blue w-25">
+          Add <i class="bi bi-plus-lg"></i>
+        </button>
+        <p
+          *ngIf="TaskForm.get('task')?.touched && TaskForm.get('task')?.hasError('required')"
+          class="text-danger"
+        >
+          Enter Your Task
+        </p>
+
+        <p
+          *ngIf="
+            TaskForm.get('task')?.touched &&
+            !TaskForm.get('task')?.hasError('required') &&
+            TaskForm.get('task')?.hasError('whitespace')
+          "
+          class="text-danger"
+        >
+          Task cannot be empty or just spaces
+        </p>
+
+        <p *ngIf="message?.success" class="text-success">{{ message?.title }}</p>
+    <p *ngIf="message && !message.success" class="text-danger">{{ message.title }}</p>
+
+        
+      </form>
+    </div>
+  </div>
+</div>

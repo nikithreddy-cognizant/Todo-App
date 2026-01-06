@@ -1,0 +1,12 @@
+a {
+  cursor: pointer;
+}
+
+.navbar{
+  background-color: #000048;
+  color: #ffffff;
+}
+
+li>a{
+  color: #ffffff;
+}

@@ -1,0 +1,21 @@
+.navigate{
+    border: none;
+    background-color: #ffffff;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #3838c8;
+}
+
+.text-sky-blue{
+color: #2F78C4;
+}
+
+.btn-sky-blue{
+background-color: #2F78C4;
+color: #ffffff;
+}
+
+.border-sky-blue{
+    border: 1px solid #2F78C4;
+}
+
